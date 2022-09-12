@@ -1,66 +1,78 @@
 const airline = "Royal Ashim Airlines";
 const plane = "A320";
 
-//string methods
-console.log(airline.toLowerCase());
-console.log(airline.toUpperCase());
+//Part3
+///////////////////////////////////////////////////////////////////////////////////////////////
+console.log("a+very+nice+string".split("+"));
+console.log("Ashim Poudel".split(" "));
 
-//fix the capitalization
-const passenger = "aShMA"; //Ashma
-const passengerLower = passenger.toLowerCase();
-const correctPassenger =
-  passengerLower[0].toUpperCase() + passengerLower.slice(1);
-console.log(correctPassenger);
+const [firstName, lastName] = "Ashim Poudel".split(" ");
 
-//comparing email
-const email = "hello@ashim.com";
-const loginEmail = "  Hello@Ashim.Com \n";
+const newName = ["Mr.", firstName, lastName.toUpperCase()].join(" ");
+console.log(newName);
 
-// const lowerEmail = loginEmail.toLowerCase();
-// const trimmedEmail = lowerEmail.trim();
-// console.log(email);
-// console.log(loginEmail);
-// console.log(trimmedEmail);
+///////////////////////////////////////////////////////////////////////////////////////////////
+// Part 2
+// //string methods
+// console.log(airline.toLowerCase());
+// console.log(airline.toUpperCase());
 
-const normalizedEmail = loginEmail.toLowerCase().trim();
-console.log(normalizedEmail);
-console.log(email === normalizedEmail);
+// //fix the capitalization
+// const passenger = "aShMA"; //Ashma
+// const passengerLower = passenger.toLowerCase();
+// const correctPassenger =
+//   passengerLower[0].toUpperCase() + passengerLower.slice(1);
+// console.log(correctPassenger);
 
-//Replacing
-const priceGB = "300,85£";
-const priceUS = priceGB.replace("£", "$").replace(",", ".");
-console.log(priceUS);
+// //comparing email
+// const email = "hello@ashim.com";
+// const loginEmail = "  Hello@Ashim.Com \n";
 
-const announcement =
-  "All passengers come to boarding door 24. Boarding door 24!";
-console.log(announcement.replaceAll("door", "gate"));
+// // const lowerEmail = loginEmail.toLowerCase();
+// // const trimmedEmail = lowerEmail.trim();
+// // console.log(email);
+// // console.log(loginEmail);
+// // console.log(trimmedEmail);
 
-//Booleans
-const planes = "Airbus A320neo";
-console.log(planes.includes("A320"));
-console.log(planes.includes("Boeing"));
-console.log(planes.startsWith("Air"));
-if (planes.startsWith("Airbus") && planes.endsWith("neo"));
-console.log("part of the new airbus family");
+// const normalizedEmail = loginEmail.toLowerCase().trim();
+// console.log(normalizedEmail);
+// console.log(email === normalizedEmail);
 
-// Practise Exercise
-const checkBaggage = function (items) {
-  const baggage = items.toLowerCase();
-  if (
-    baggage.includes("knife") ||
-    baggage.includes("guns") ||
-    baggage.includes("bombs")
-  ) {
-    console.log("you are not allowed to board");
-  } else {
-    console.log("Welcome on board");
-  }
-};
-checkBaggage("I have a laptop, food,pocket knife");
-checkBaggage("I have a shocks, camera");
-checkBaggage("I have a gun, bombs for protection");
+// //Replacing
+// const priceGB = "300,85£";
+// const priceUS = priceGB.replace("£", "$").replace(",", ".");
+// console.log(priceUS);
 
-/*Working with Strings Part1*/
+// const announcement =
+//   "All passengers come to boarding door 24. Boarding door 24!";
+// console.log(announcement.replaceAll("door", "gate"));
+
+// //Booleans
+// const planes = "Airbus A320neo";
+// console.log(planes.includes("A320"));
+// console.log(planes.includes("Boeing"));
+// console.log(planes.startsWith("Air"));
+// if (planes.startsWith("Airbus") && planes.endsWith("neo"));
+// console.log("part of the new airbus family");
+
+// // Practise Exercise
+// const checkBaggage = function (items) {
+//   const baggage = items.toLowerCase();
+//   if (
+//     baggage.includes("knife") ||
+//     baggage.includes("guns") ||
+//     baggage.includes("bombs")
+//   ) {
+//     console.log("you are not allowed to board");
+//   } else {
+//     console.log("Welcome on board");
+//   }
+// };
+// checkBaggage("I have a laptop, food,pocket knife");
+// checkBaggage("I have a shocks, camera");
+// checkBaggage("I have a gun, bombs for protection");
+
+///////////////////////////////////////////*Working with Strings Part1*/
 // console.log(plane[0]);
 // console.log(plane[1]);
 // console.log(plane[2]);
